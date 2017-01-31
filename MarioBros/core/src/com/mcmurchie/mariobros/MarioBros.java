@@ -8,7 +8,10 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mcmurchie.mariobros.Screens.PlayScreen;
 
-// changes from applciaion  adapter
+// this Game class 	is an applciation listener and delegates the rendering to a screen
+//this allows the game to easily have multiple screens
+// screens aren't disposed so we need to do that
+// java.lang.object ---> com.badlogic.Game  (ApplicaitonListener interface)
 public class MarioBros extends Game {
 	public SpriteBatch batch;
 
